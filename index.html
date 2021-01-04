@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Pocket News</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAV -->
+    <header class="header-area overlay">
+      <nav class="navbar navbar-expand-md navbar-dark">
+        <div class="container">
+          <a href="#" class="navbar-brand">Pocket News</a>
+
+          <div id="main-nav" class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+              <li><a href="#" class="nav-item nav-link active">Home</a></li>
+              <li><a href="#" class="nav-item nav-link">About Us</a></li>
+              <li class="dropdown">
+                <a href="category.html" class="nav-item nav-link">Category</a>
+              </li>
+
+              <li><a href="#" class="nav-item nav-link">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Banner -->
+
+      <div class="banner">
+        <div class="container">
+          <h1>Bring the world to you</h1>
+        </div>
+      </div>
+    </header>
+
+    <!-- Carousel -->
+    <h2 class="trending">Trending Now</h2>
+    <div id="newsCarousel" class="slider owl-carousel owl-theme"></div>
+
+    <!-- Articles -->
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h2 class="text-center trending">Latest news</h2>
+        </div>
+      </div>
+      <div id="main-results" class="row"></div>
+    </div>
+    <!-- End of Articles -->
+    <button id="load-more-btn" class="btn btn-danger center-block loadMore">
+      Load more
+    </button>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

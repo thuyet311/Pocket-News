@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700,800");
+@import url("https://fonts.googleapis.com/css?family=Lobster");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html,
+body {
+  height: 100%;
+  place-items: center;
+  text-align: center;
+  background: #f2f2f2;
+}
+a {
+  text-decoration: none;
+}
+/* NAV */
+.header-area {
+  position: relative;
+  height: 60vh;
+  background: #5bc0de;
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.banner {
+  background-image: url("https://trendland.com/wp-content/uploads/2019/03/editorial-illustration-by-spiros-halaris-3.jpg");
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 100%;
+  color: #fff;
+  text-align: center;
+  z-index: 1;
+}
+.banner h1 {
+  font-weight: 400;
+  font-family: "Lobster", cursive;
+}
+.banner p {
+  font-weight: 700;
+}
+.navbar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding: 0;
+  width: 100%;
+  transition: background 0.6s ease-in;
+  z-index: 99999;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  opacity: 80%;
+}
+.navbar .navbar-brand {
+  font-family: "Lobster", cursive;
+  font-size: 2.5rem;
+}
+
+/* end of NAV */
+/* Carousel */
+.trending {
+  margin: 1rem;
+  font-family: "Lobster", cursive;
+}
+.slider {
+  max-width: 1100px;
+  display: flex;
+  margin: auto;
+}
+.slider .card {
+  flex: 1;
+  margin: 0 0.8rem;
+  background: #fff;
+  height: 400px;
+}
+.slider .card .img {
+  height: 200px;
+  width: 100%;
+}
+.slider .card .img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.carousel-title {
+  padding: 1rem;
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #ff6768;
+  line-height: 20px;
+  height: 100px;
+}
+
+.carousel-author {
+  text-align: right;
+  padding: 10px 20px;
+}
+
+.card .content .btn {
+  display: block;
+  text-align: left;
+  margin: 10px 20px;
+  background: #d88a83;
+  color: #fff;
+  border: none;
+  outline: none;
+  font-size: 17px;
+  padding: 5px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.card .content .btn:hover {
+  transform: scale(0.9);
+}
+.col-md-4 {
+  display: none;
+}
+/* Main */
+.card-body {
+  min-height: 400px;
+}
+.card-title-middle {
+  height: 8vw;
+}
+.card-text {
+  height: 200px;
+  text-overflow: ellipsis;
+}
+.card-img-top {
+  width: 100%;
+  height: 15vw;
+  object-fit: cover;
+}
+#load-more-btn {
+  margin: 1rem;
+  font-size: 1.2rem;
+}
+/* Cat */
+.ha-section-1 {
+  padding: 10px 60px 10px 60px;
+  max-width: 100%vw;
+  margin: 20px;
+}
+
+.select-button {
+  border: 0px;
+  margin: 10px;
+}
+
+button {
+  margin-left: 5px;
+}
+
+.choose-cat-container {
+  display: flex;
+  align-items: start;
+  margin-bottom: 30px;
+}
+
+a {
+  color: black;
+}
+
+input {
+  padding: 5px;
+}
+
+input.text {
+  font-size: small;
+}
