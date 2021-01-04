@@ -17,7 +17,7 @@ const renderCarousel = (article) => `<div class="card">
 
 const fetchCarousel = async () => {
   const url =
-    "https://newsapi.org/v2/everything?domains=techcrunch.com,thenextweb.com,newscientist.com&language=en&sortBy=popularity&apiKey=fc8ec155180d4cec897c640178f626d4";
+    "https://cors-anywhere.herokuapp.com/https://newsapi.org/v2/everything?domains=techcrunch.com,thenextweb.com,newscientist.com&language=en&sortBy=popularity&apiKey=fc8ec155180d4cec897c640178f626d4";
   const result = await fetch(url);
   const data = await result.json();
   trendingPosts = data.articles;
@@ -43,7 +43,7 @@ let newsArticle = [];
 
 async function updateMain() {
   const url =
-    "https://newsapi.org/v2/everything?domains=thenextweb.com,newscientist.com&language=en&apiKey=fc8ec155180d4cec897c640178f626d4";
+    "https://cors-anywhere.herokuapp.com/https://newsapi.org/v2/everything?domains=thenextweb.com,newscientist.com&language=en&apiKey=fc8ec155180d4cec897c640178f626d4";
   const result = await fetch(url);
   const data = await result.json();
   newsArticles = data.articles;
@@ -103,7 +103,7 @@ const getNewsByCat = async () => {
   let catSelected = document.getElementById("category").value;
   console.log(catSelected);
 
-  const url = `https://newsapi.org/v2/everything?q=${catSelected}&sources=business-insider,the-verge,wired,techcrunch,the-next-web&apiKey=9defa31a63cc419087e34be80de1bf0f`;
+  const url = `https://cors-anywhere.herokuapp.com/https://newsapi.org/v2/everything?q=${catSelected}&sources=business-insider,the-verge,wired,techcrunch,the-next-web&apiKey=9defa31a63cc419087e34be80de1bf0f`;
   console.log(url);
 
   const response = await fetch(url);
